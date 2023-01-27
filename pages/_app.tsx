@@ -25,13 +25,14 @@ export default function MyApp(props: MyAppProps) {
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
-        <AppBar position="static">
+        <AppBar position="fixed">
           <Container maxWidth="lg">
             <Toolbar disableGutters>
               <Typography variant="h6">Rocket League Replays</Typography>
             </Toolbar>
           </Container>
         </AppBar>
+        <Toolbar />
         <Component {...pageProps} />
       </ThemeProvider>
     </CacheProvider>
